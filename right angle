@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+  int a,b,c,d,e,f;
+  scanf("%d %d %d",&a,&b,&c);
+  d=pow(c,2);
+  e=pow(b,2);
+  f=pow(a,2);
+  if((a<=0)||(b<=0)||(c<=0))
+  {
+    printf("Invalid input");
+  }
+  else if((a+b <= c)||(b+a <= c)||(c+a <= b))
+  {
+    printf("Invalid input");
+  }
+  else
+  {
+    if((d==e+f)||(e==f+d)||(f==e+d))
+    {
+      printf("Yes");
+    }
+    else
+    {
+      printf("No");
+    }
+  }
+  return 0;
+}
+  
